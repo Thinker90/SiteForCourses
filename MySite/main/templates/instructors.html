@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Home -->
+
+	<div class="home"></div>
+
+	<!-- Video -->
+
+	<div class="video">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2">
+					<div class="video_content">
+						<div class="video_container_outer">
+							<div class="video_overlay d-flex flex-column align-items-start justify-content-center">
+								<div>Teacher</div>
+							</div>
+							<div class="video_container">
+								<video id="vid1" class="video-js vjs-default-skin" controls width="100%" height="100%" data-setup='{ "poster": "images/video.jpg", "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/IV3ueyrp5M4"}], "youtube": { "iv_load_policy": 1 } }'>
+								</video>
+							</div>
+						</div>
+						<div class="register_button"><a href="#">register</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Instructors -->
+
+	<div class="instructors">
+		<div class="instructors_background" style="background-image:url(images/instructors_background.png)"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 class="section_title text-center">Мальцев Алексей Александрович</h2>
+				</div>
+			</div>
+			<div class="row instructors_row">
+
+				<!-- Instructor -->
+				<div class="col-lg instructor_col">
+					<div class="instructor text-center">
+						<div class="instructor_image_container">
+							<div class="instructor_image"><img src="images/instructor_1.jpg" alt=""></div>
+						</div>
+
+						<div class="instructor_title">Педагог дополнительного оразования</div>
+						<div class="instructor_text">
+							<p>Тут должен быть рассказ о том какой я класный педагог</p>
+						</div>
+						<div class="instructor_social">
+							<ul>
+								<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
+
+{% block js %}
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="plugins/progressbar/progressbar.min.js"></script>
+<script src="plugins/video-js/video.min.js"></script>
+<script src="plugins/video-js/Youtube.min.js"></script>
+<script src="js/instructors.js"></script>
+{% endblock %}
