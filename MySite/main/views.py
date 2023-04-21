@@ -1,16 +1,21 @@
 from django.shortcuts import render
+from .models import *
 
 
 # Create your views here.
 
 def index(request):
-    return render(request, "index.html", {'activePage': 1})
+    posts = Post.objects.filter(type_id=1)
+    return render(request, "index.html", {'activePage': 1,
+                                          'posts': posts})
 
 def blog(request):
     return render(request, "blog.html", {'activePage': 4})
 
 def courses(request):
-    return render(request, "courses.html", {'activePage': 2})
+    posts = Post.objects.filter(type_id=2)
+    return render(request, "courses.html", {'activePage': 2,
+                                            'posts': posts})
 
 def instructors(request):
     return render(request, "instructors.html", {'activePage': 3})

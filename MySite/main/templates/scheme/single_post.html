@@ -1,0 +1,26 @@
+<div class="col-lg-4 course_col">
+  <div class="course">
+    <div class="course_image"><img src="images/course_1.jpg" alt=""></div>
+      <div class="course_body">
+		<div class="course_title"><a href="course.html">{{post.title}}</a></div>
+        <div class="course_info">
+          <ul>
+            <li><a href="instructors.html">Sarah Parker</a></li>
+            <li><a href="#">English</a></li>
+          </ul>
+        </div>
+        <div class="course_text">
+          <p>{{post.content| truncatewords:10}}</p>
+        </div>
+      </div>
+      <div class="course_footer d-flex flex-row align-items-center justify-content-start">
+        {% if post.type_id.id == 2 %}
+
+          <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div>
+          <div class="course_mark course_free trans_200"><a href="#">Free</a></div>
+        {% elif post.type_id.id == 1 %}
+          <div class="news_mark course_free trans_200"><a href="#">Подробнее</a></div>
+        {% endif %}
+    </div>
+  </div>
+</div>

@@ -421,7 +421,7 @@ section
 }
 .logo_container
 {
-	width: 100px;
+	width: 120px;
 }
 .logo
 {
@@ -923,7 +923,6 @@ section
 .home
 {
 	width: 100%;
-	height: 179px;
 	background: #f1f1f1;
 }
 .breadcrumbs_container
@@ -1002,6 +1001,7 @@ section
 	padding-left: 52px;
 	padding-right: 52px;
 	margin-top: 20px;
+	margin: auto;
 }
 .language_item
 {
@@ -1219,6 +1219,7 @@ section
 {
 	box-shadow: 0px 5px 20px rgba(0,0,0,0.35);
 }
+
 .course_mark a
 {
 	display: block;
@@ -1227,6 +1228,37 @@ section
 	color: #FFFFFF;
 	line-height: 25px;
 }
+
+.news_mark
+{
+	position: absolute;
+	top: 50%;
+	left: 85%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 25px;
+	background: #f9cf0e;
+	border-radius: 3px;
+	text-align: center;
+}
+.news_mark:hover
+{
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.35);
+}
+
+.news_mark a
+{
+	display: block;
+	font-size: 12px;
+	font-weight: 600;
+	color: #FFFFFF;
+	line-height: 25px;
+}
+
 .course_free
 {
 	background: #2e21df;

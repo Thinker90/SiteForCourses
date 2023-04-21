@@ -2,7 +2,7 @@
 {% load static %}
 <html lang="en">
 <head>
-<title>Lingua</title>
+<title>{% block title %}{% endblock %}</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Lingua project">
@@ -64,11 +64,11 @@
 							</div>
 							<nav class="main_nav_contaner">
 								<ul class="main_nav">
-									<li {% if activePage == 1 %} class="active" {% endif %} ><a href="{% url 'index' %}">Главная</a></li>
+									<li {% if activePage == 1 %} class="active" {% endif %}><a href="{% url 'index' %}">Главная</a></li>
 									<li {% if activePage == 2 %} class="active" {% endif %} ><a href="{% url 'courses' %}">Курсы</a></li>
-									<li {% if activePage == 3 %} class="active" {% endif %} ><a href="{% url 'instructors' %}">Инструкторы</a></li>
+									<li {% if activePage == 3 %} class="active" {% endif %} ><a href="{% url 'instructors' %}">Педагог</a></li>
 									<li {% if activePage == 4 %} class="active" {% endif %} ><a href="{% url 'blog' %}">Блог</a></li>
-									<li {% if activePage == 5 %} class="active" {% endif %} ><a href="{% url 'contact' %}">Контакты</a></>
+									<li {% if activePage == 5 %} class="active" {% endif %} ><a href="{% url 'contact' %}">Контакты</a></li>
 								</ul>
 							</nav>
 							<div class="header_content_right ml-auto text-right">
@@ -116,7 +116,6 @@
 				<li class="menu_mm"><a href="{% url 'index' %}">Home</a></li>
 				<li class="menu_mm"><a href="{% url 'courses' %}">Courses</a></li>
 				<li class="menu_mm"><a href="{% url 'instructors' %}">Instructors</a></li>
-				<li class="menu_mm"><a href="#">Events</a></li>
 				<li class="menu_mm"><a href="{% url 'blog' %}">Blog</a></li>
 				<li class="menu_mm"><a href="{% url 'contact' %}">Contact</a></li>
 			</ul>

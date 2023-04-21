@@ -1,0 +1,44 @@
+{% load static %}
+<div class="language">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="language_slider_container">
+
+						<!-- Language Slider -->
+
+						<div class="owl-carousel owl-theme language_slider">
+
+							<!-- Flag -->
+							<div class="owl-item language_item">
+								<a href="#">
+									<div class="flag"><img src="{% static 'images/admin.png' %}" alt=""></div>
+									<div class="lang_name">Системное </br> администрирование</div>
+								</a>
+							</div>
+
+							<!-- Flag -->
+							<div class="owl-item language_item">
+								<a href="#">
+									<div class="flag"><img src="{% static 'images/web.png' %}" alt=""></div>
+									<div class="lang_name">Разработка </br> сайтов</div>
+								</a>
+							</div>
+
+							<!-- Flag -->
+							<div class="owl-item language_item">
+								<a href="#">
+									<div class="flag"><img src="{% static 'images/protect.png' %}" alt=""></div>
+									<div class="lang_name">Кибербезопасность </br>и работа </br>с большими данными</div>
+								</a>
+							</div>
+
+						</div>
+
+						<div class="lang_nav lang_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+						<div class="lang_nav lang_next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
