@@ -64,11 +64,11 @@
 							</div>
 							<nav class="main_nav_contaner">
 								<ul class="main_nav">
-									<li><a href="{% url 'index' %}">Главная</a></li>
-									<li><a href="{% url 'courses' %}">Курсы</a></li>
-									<li><a href="{% url 'instructors' %}">Инструкторы</a></li>
-									<li><a href="{% url 'blog' %}">Блог</a></li>
-									<li class="active"><a href="{% url 'contact' %}">Контакты</a></li>
+									<li {% if activePage == 1 %} class="active" {% endif %} ><a href="{% url 'index' %}">Главная</a></li>
+									<li {% if activePage == 2 %} class="active" {% endif %} ><a href="{% url 'courses' %}">Курсы</a></li>
+									<li {% if activePage == 3 %} class="active" {% endif %} ><a href="{% url 'instructors' %}">Инструкторы</a></li>
+									<li {% if activePage == 4 %} class="active" {% endif %} ><a href="{% url 'blog' %}">Блог</a></li>
+									<li {% if activePage == 5 %} class="active" {% endif %} ><a href="{% url 'contact' %}">Контакты</a></>
 								</ul>
 							</nav>
 							<div class="header_content_right ml-auto text-right">
