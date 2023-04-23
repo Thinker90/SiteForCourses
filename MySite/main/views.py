@@ -21,8 +21,14 @@ def course_detail(request,pk):
     posts = Post.objects.get(id=pk)
     return render(request, "course.html", context={'posts': posts})
 
+def news_detail(request,pk):
+    posts = Post.objects.get(id=pk)
+    return render(request, "course.html", context={'posts': posts})
+
 def instructors(request):
-    return render(request, "instructors.html", {'activePage': 3})
+    posts = Post.objects.get(type_id=3)
+    return render(request, "instructors.html", {'activePage': 3,
+                                                'posts': posts})
 
 def contact(request):
     return render(request, "contact.html", {'activePage': 5})

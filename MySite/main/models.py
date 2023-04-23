@@ -15,7 +15,7 @@ class Post(models.Model):
     type_id = models.ForeignKey(Post_type, on_delete=models.PROTECT)
     title = models.CharField("Заголовок", max_length=255)
     content = models.TextField("Описание")
-    img = models.URLField("Миниатюра поста", blank=True)
+    img = models.CharField("Миниатюра поста", blank=True, max_length=255)
     price = models.IntegerField("Стоимость курса", blank=True)
 
     def __str__(self):

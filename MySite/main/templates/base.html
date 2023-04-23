@@ -58,7 +58,7 @@
 					<div class="col">
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
 							<div class="logo_container mr-auto">
-								<a href="#">
+								<a href="{% url 'index' %}">
 									<div class="logo_text">IT-Admin</div>
 								</a>
 							</div>
@@ -67,7 +67,6 @@
 									<li {% if activePage == 1 %} class="active" {% endif %}><a href="{% url 'index' %}">Главная</a></li>
 									<li {% if activePage == 2 %} class="active" {% endif %} ><a href="{% url 'courses' %}">Курсы</a></li>
 									<li {% if activePage == 3 %} class="active" {% endif %} ><a href="{% url 'instructors' %}">Педагог</a></li>
-									<li {% if activePage == 4 %} class="active" {% endif %} ><a href="{% url 'blog' %}">Блог</a></li>
 									<li {% if activePage == 5 %} class="active" {% endif %} ><a href="{% url 'contact' %}">Контакты</a></li>
 								</ul>
 							</nav>
@@ -113,15 +112,14 @@
 		</div>
 		<nav class="menu_nav">
 			<ul class="menu_mm">
-				<li class="menu_mm"><a href="{% url 'index' %}">Home</a></li>
-				<li class="menu_mm"><a href="{% url 'courses' %}">Courses</a></li>
-				<li class="menu_mm"><a href="{% url 'instructors' %}">Instructors</a></li>
-				<li class="menu_mm"><a href="{% url 'blog' %}">Blog</a></li>
-				<li class="menu_mm"><a href="{% url 'contact' %}">Contact</a></li>
+				<li class="menu_mm"><a href="{% url 'index' %}">Главная</a></li>
+				<li class="menu_mm"><a href="{% url 'courses' %}">Курсы</a></li>
+				<li class="menu_mm"><a href="{% url 'instructors' %}">Педагог</a></li>
+				<li class="menu_mm"><a href="{% url 'contact' %}">Контакты</a></li>
 			</ul>
 		</nav>
 		<div class="menu_extra">
-			<div class="menu_phone"><span class="menu_title">phone:</span>+44 300 303 0266</div>
+			<div class="menu_phone"><span class="menu_title">phone:</span>+7 XXX XXX XX XX</div>
 			<div class="menu_social">
 				<span class="menu_title">follow us</span>
 				<ul>
@@ -138,8 +136,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col text-center">
-						<h1 class="home_title">Learn Languages Easily</h1>
-						<div class="home_button trans_200"><a href="#">get started</a></div>
+						<h1 class="home_title"></h1>
+						<div class="home_button trans_200"><a href="#"></a></div>
 					</div>
 				</div>
 			</div>
@@ -182,7 +180,7 @@
 								<div class="footer_social">
 									<span class="cr_social_title">follow us</span>
 									<ul>
-										<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+										<li><a href="https://vk.com/it_cube_satka"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
 									</ul>
 								</div>
 							</div>

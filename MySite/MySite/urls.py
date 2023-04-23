@@ -21,9 +21,10 @@ from main import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name="index"),
-    path('page/blog', views.blog,  name="blog"),
-    path('page/courses', views.courses,  name="courses"),
-    path('page/course/<int:pk>', views.course_detail,  name="single-courses"),
-    path('page/instructors', views.instructors,  name="instructors"),
-    path('page/contact', views.contact,  name="contact"),
+    path('blog', views.blog,  name="blog"),
+    path('courses', views.courses,  name="courses"),
+    path('course/<int:pk>', views.course_detail,  name="single-courses"),
+    path('news/<int:pk>', views.news_detail,  name="single-news"),
+    path('instructors', views.instructors,  name="instructors"),
+    path('contact', views.contact,  name="contact"),
 ]
