@@ -17,9 +17,15 @@ def courses(request):
     return render(request, "courses.html", {'activePage': 2,
                                             'posts': posts})
 
+def course_detail(request,pk):
+    posts = Post.objects.get(id=pk)
+    return render(request, "course.html", context={'posts': posts})
+
 def instructors(request):
     return render(request, "instructors.html", {'activePage': 3})
 
 def contact(request):
     return render(request, "contact.html", {'activePage': 5})
+
+
 
