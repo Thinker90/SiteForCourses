@@ -1,6 +1,7 @@
 from django.shortcuts import render
+from aiogram import Bot, Dispatcher, types
+from aiogram.utils import executor
 from .models import *
-
 
 # Create your views here.
 
@@ -33,5 +34,12 @@ def instructors(request):
 def contact(request):
     return render(request, "contact.html", {'activePage': 5})
 
-
+#async def send_message_to_telegram(message):
+    # создаем бота
+#    API_TOKEN = '6287877530:AAEGHSuJgsvNzP2p3m6L7LD071p9cBw49hY'
+#    bot = Bot(token=API_TOKEN)
+    # создаем диспетчер
+#    dp = Dispatcher(bot)
+    # отправляем сообщение
+#    await bot.send_message(text=message)
 

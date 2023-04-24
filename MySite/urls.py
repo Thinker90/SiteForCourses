@@ -27,4 +27,5 @@ urlpatterns = [
     path('news/<int:pk>', views.news_detail,  name="single-news"),
     path('instructors', views.instructors,  name="instructors"),
     path('contact', views.contact,  name="contact"),
+#    path('send_message_to_telegram/', views.send_message_to_telegram, name='send_message_to_telegram'),
 ]

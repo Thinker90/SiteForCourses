@@ -2,7 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+from bot.views import *            # <---------------
 
 def main():
     """Run administrative tasks."""
@@ -17,6 +17,5 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
-
 if __name__ == '__main__':
-    main()
+    main(), executor.start_polling(dp, skip_updates=True) # <---------------

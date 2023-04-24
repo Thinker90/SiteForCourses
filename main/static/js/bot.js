@@ -1,5 +1,5 @@
 $(document).ready(function(){
     $('.user').on('click', function(){
-        alert('шалом')
+        alert('comming soon')
     })
 })
