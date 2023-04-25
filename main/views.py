@@ -1,6 +1,4 @@
 from django.shortcuts import render
-from aiogram import Bot, Dispatcher, types
-from aiogram.utils import executor
 from .models import *
 
 # Create your views here.
