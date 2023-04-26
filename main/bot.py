@@ -75,7 +75,7 @@ async def echo(
 
 
 def myReg(message):
-    mes = 'Я не поимаю...'
+    mes = 'Я не понимаю...'
 
     match = re.search(r'ко?а?мм?анд.{0,5}', message)
     if (match):
